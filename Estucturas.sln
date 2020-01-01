@@ -11,7 +11,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Corredor", "Corredor\Corred
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Alumno", "Alumno\Alumno.vcxproj", "{B5CA6710-CAE3-4CB7-A32E-BC16B1A49B1C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fichero", "Empleados\Empleados.vcxproj", "{E3ECF1EE-BC2B-4CF6-B540-F68783625B70}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fichero", "Archivo\Empleados.vcxproj", "{E3ECF1EE-BC2B-4CF6-B540-F68783625B70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

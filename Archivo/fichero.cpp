@@ -1,13 +1,12 @@
 // fichero.cpp :
 // ejemplo de tratamiento de estructuras 
 // se introducen unos datos y se guardan en un archivo de texto 
+// se añade un marcador de tiempo cada vez que se modifica el archivo
 //
 
 #include <iostream>
 #include<fstream> // libreria para manejo de ficheros en C++
 # include<ctime>
-
-
 
 
 using namespace std;
@@ -75,9 +74,7 @@ int main()
 
         fichero.close(); // cierre del archivo
     }
-
-
-   
+ 
 
     cout << "Pulsa una tecla para terminar " << endl;
     cin.get();
