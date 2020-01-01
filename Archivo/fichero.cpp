@@ -60,15 +60,16 @@ int main()
            
             cout << "Introduce la edad ";
             cin >> lista[i].edad;
+            // limpieza del buffer
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
             // introducimos datos en el archivo
             fichero << "Id: " << i+1 << endl;
             fichero << "Nombre: " << lista[i].nombre << endl;
             fichero << "Edad: " << lista[i].edad << endl;
 
-            // limpieza del buffer
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+         
 
         }
 
