@@ -17,8 +17,6 @@ struct atleta
 
 };
 
-
-
 void limpieza_buffer()
 {
     // limpieza del buffer se puede colocar la funcion en lugar de los dos comandos
@@ -40,7 +38,7 @@ int main()
     cout << "Introduce el numero de atletas ";
     cin >> n_atletas;
     limpieza_buffer();
-    cout << "Numero de atletas= " << n_atletas << endl;
+
 
     //introduccion de los datos
     for (int i = 0; i < n_atletas; i++)
