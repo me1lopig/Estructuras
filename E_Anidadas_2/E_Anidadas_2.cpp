@@ -1,5 +1,6 @@
 // E_Anidadas_2.cpp 
 // ejemplo de estructura anidada
+// colocar limpieza de buffer después de la entrada de valores numéricos
 //
 
 
@@ -20,7 +21,7 @@ struct alumno
     char nombre[20];
     char sexo[10];
     int edad;
-    struct promedio media; // variable tipo struct dentro de otro struct
+    struct promedio media; // variable tipo struct dentro de otro struct tipo promedio
 };
 
 
@@ -52,8 +53,7 @@ int main()
     for (int i = 0; i < n_alumnos; i++)
     {
         // introducción de los datos
-  
-
+ 
         cout << "Introduce el nombre del alumno "<<i+1<<" ";
         cin.getline(alumno1[i].nombre, 20, '\n');
 
@@ -87,7 +87,7 @@ int main()
     }
 
     
-    // impresion de resultados
+    // impresion de resultados del alumno con mejor nota
     cout << "\nDatos del alumno con mejor promedio " << endl;
     cout << "Nombre del alumno " << alumno1[id].nombre << endl;
     cout << "Sexo del alumno " << alumno1[id].sexo << endl;

@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "E_Anidadas_1", "E_anidadada
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "E_Anidadas_2", "E_Anidadas_2\E_Anidadas_2.vcxproj", "{675DC652-9829-4514-97E5-D88C2F62556F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tiempo_ciclista", "Tiempo_ciclista\Tiempo_ciclista.vcxproj", "{BB65A6CF-8052-4D12-A538-E7D8F0247D27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{675DC652-9829-4514-97E5-D88C2F62556F}.Release|x64.Build.0 = Release|x64
 		{675DC652-9829-4514-97E5-D88C2F62556F}.Release|x86.ActiveCfg = Release|Win32
 		{675DC652-9829-4514-97E5-D88C2F62556F}.Release|x86.Build.0 = Release|Win32
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Debug|x64.ActiveCfg = Debug|x64
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Debug|x64.Build.0 = Debug|x64
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Debug|x86.Build.0 = Debug|Win32
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Release|x64.ActiveCfg = Release|x64
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Release|x64.Build.0 = Release|x64
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Release|x86.ActiveCfg = Release|Win32
+		{BB65A6CF-8052-4D12-A538-E7D8F0247D27}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
