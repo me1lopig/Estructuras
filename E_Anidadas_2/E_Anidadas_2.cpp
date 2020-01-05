@@ -1,4 +1,5 @@
-// E_Anidadas_2.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// E_Anidadas_2.cpp 
+// ejemplo de estructura anidada
 //
 
 
