@@ -24,7 +24,6 @@ void limpieza_buffer()
 }
 
 
-
 int main()
 {
 
@@ -64,23 +63,20 @@ int main()
     {
         suma_minutos+=suma_segundos / 60;
         suma_segundos -= 60*(suma_segundos / 60);
-  
-    }
+      }
 
   
     if (suma_minutos >= 60)
     {
         suma_horas += suma_minutos / 60;
-        suma_minutos -= 60 * (suma_minutos / 60);
+        suma_minutos -= 60 * (suma_minutos / 60); //parece raro pero es una operacion entera
     }
-
 
     // impresion de resultados
     cout << "\nLos resultados de los tiempos son" << endl;
     cout << "Total de horas " << suma_horas << endl;
     cout << "Total de minutos " << suma_minutos << endl;
     cout << "Total de segundos " << suma_segundos << endl;
-
 
     // parada para fin de programa
     cout << "\nPulsa una tecla";
