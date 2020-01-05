@@ -27,7 +27,6 @@ void limpieza_buffer()
 }
 
 
-
 int main()
 {
     persona lista[DATOS]; // lista de persona con todas las caracteristicas
@@ -36,7 +35,8 @@ int main()
 
     int n_personas; // numero de persona reales que vamos procesar
     int n_sd=0; // numero de personas sin discapacidad
-    int n_cd=0; // numero de personas con discapacidad
+    int n_cd = 0; // numero de personas con discapacidad
+
 
     cout << "El numero de personas es ";
     cin >> n_personas;
@@ -54,6 +54,7 @@ int main()
                      
        // control de entrada de valores sólo 0 o 1
        cout << "Presenta discapacidad [0/1] ";
+
        cin>>lista[i].tipo;
 
        // clasificacion de los datos introducidos
@@ -61,18 +62,17 @@ int main()
        if (lista[i].tipo == 0)
        {
            // se trata de una persona sin discapacidad
-           strcpy(lista_sd[i].nombre, lista[i].nombre);
+           strcpy(lista_sd[n_sd].nombre, lista[i].nombre);
            lista_sd[i].tipo = false;
-           n_sd++;
+           n_sd++;      
        }
        else
        {
            // se trata de una persona con discapacidad
-           strcpy(lista_cd[i].nombre, lista[i].nombre);
+           strcpy(lista_cd[n_cd].nombre, lista[i].nombre);
            lista_cd[i].tipo = true;
            n_cd++;
        }
-
     }
 
     // representacion de los resultados resumidos
@@ -121,8 +121,7 @@ int main()
         }
     }
     
- 
-    // impresion de la lista de personas con discapacidad
+     // impresion de la lista de personas con discapacidad
 
     cout << "Lista completa de persona con discapacidad " << endl;
 
