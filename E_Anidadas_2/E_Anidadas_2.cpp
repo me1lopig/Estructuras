@@ -37,7 +37,7 @@ void limpieza_buffer()
 int main()
 {
     alumno alumno1[20];
-    float media[3] = { 0,0,0 }; // vector de pronedios
+    float promedio[3] = { 0,0,0 }; // vector de pronedios
     int n_alumnos;
     float media_mayor=0; // mayor valor
     int id; // indice del mayor valor 
@@ -68,31 +68,31 @@ int main()
         cout << "Introduce las notas de los alumnos" << endl;
         for (int j = 0; j < 3; j++)
         {
-            cout << "Nota " << i + 1 << " ";
-            cin >> alumno1[i].media[j].nota[j];
-            media[i] += alumno1[i].media[j].nota[j];
-
+            cout << "Nota " << j + 1 << " ";
+            cin >> alumno1[i].media.nota[j];
+            promedio[i] += alumno1[i].media.nota[j];
+            
         }
+        limpieza_buffer();
         // calculo del promedio
-        media[i] = media[i] / 3;
+        promedio[i] = promedio[i] / 3;
 
-        if (media[i] > media_mayor)
+        if (promedio[i] > media_mayor)
         {
             // obtencion de la mayor media
-            media_mayor = media[i];
+            media_mayor = promedio[i];
             id = i; // valor del id correspondente
         }
-
     }
 
     
     // impresion de resultados
-    cout << "\nDatos del alumno " << endl;
+    cout << "\nDatos del alumno con mejor promedio " << endl;
     cout << "Nombre del alumno " << alumno1[id].nombre << endl;
     cout << "Sexo del alumno " << alumno1[id].sexo << endl;
     cout << "Edad del alumno " << alumno1[id].edad << endl;
     cout.precision(3); // precision de tres cifras siginificativas
-    /cout << "Promedio de notas del alumno " << media_mayor << endl;
+    cout << "Promedio de notas del alumno " << media_mayor << endl;
 
 
     // parada para fin de programa
